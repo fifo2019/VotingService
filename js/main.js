@@ -43,18 +43,18 @@ window.addEventListener('DOMContentLoaded', function () {
     });
 
     voteForCats.addEventListener('click', () => {
-        checkHidden();
         sendPOST('/sse/vote/cats');
+        checkHidden();
     });
 
     voteForDogs.addEventListener('click', () => {
-        checkHidden();
         sendPOST('/sse/vote/dogs');
+        checkHidden();
     });
 
     voteForParrots.addEventListener('click', () => {
-        checkHidden();
         sendPOST('/sse/vote/parrots');
+        checkHidden();
     });
 
     toVoteBtn.addEventListener('click', () => checkHidden());
