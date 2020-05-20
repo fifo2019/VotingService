@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/icon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Voting service</title>
+</head>
+<body>
+<div class="container">
+    <div class="voting-place">
+        <h1>Who will you vote for?</h1>
+        <button class="voting__btn js-voting-cats">Cats</button>
+        <button class="voting__btn js-voting-dogs">Dogs</button>
+        <button class="voting__btn js-voting-parrots">Parrots</button>
+    </div>
+    <table class="result-voting hide">
+        <caption><h1>Result voting.</h1></caption>
+        <thead>
+            <tr>
+                <td>Candidate</td>
+                <td>Voices</td>
+                <td>Progress</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cats</td>
+                <td class="js-voices-cats"></td>
+                <td><progress max="100" value="0" class="js-progress-cats"></progress></td>
+            </tr>
+            <tr>
+                <td>Dogs</td>
+                <td class="js-voices-dogs"></td>
+                <td><progress max="100" value="0" class="js-progress-dogs"></progress></td>
+            </tr>
+            <tr>
+                <td>Parrots</td>
+                <td class="js-voices-parrots"></td>
+                <td><progress max="100" value="0" class="js-progress-parrots"></progress></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"><button class="voting__btn js-to-vote-btn">To vote</button></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
