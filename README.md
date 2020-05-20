@@ -1,1 +1,1 @@
-# VotingService
+# Voting service
